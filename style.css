@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.button-92 {
+  --c: #fff;
+  background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
+    #004dff;
+  color: #0000;
+  border: none;
+  transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+  text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+    calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+  outline-offset: .1em;
+  transition: 0.3s;
+}
+
+.button-92:hover,
+.button-92:focus-visible {
+  --_p: 0%;
+  --_i: 1;
+}
+
+.button-92:active {
+  text-shadow: none;
+  color: var(--c);
+  box-shadow: inset 0 0 9e9q #0005;
+  transition: 0s;
+}
+
+.button-92 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  cursor: pointer;
+  padding: .1em .3em;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: url(bg1.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+form{
+    width: 70%;
+    height: 300px;
+    background-color: white;
+    z-index: 2;
+}
+
+.animate{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    animation: rise 6s 1;
+}
+
+@keyframes rise {
+    0%{
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateY(-200px);
+    }
+    50%{
+        transform: translateY(-200px);
+    }
+    80%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+
+
+
+
+
